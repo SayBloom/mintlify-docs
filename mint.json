@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "French 1",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -18,74 +18,194 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:peter@saybloom.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Try Speaking",
+    "url": "https://app.saybloom.com"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Practice",
+      "url": "practice"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Practice Speaking",
+      "icon": "microphone",
+      "url": "practice"
     },
     {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "icon": "discord",
+      "url": "https://discord.com/invite/pjjxdtdhbP"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Introduction",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "French Basics",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "french-basics/core-learning-goals",
+        "french-basics/alphabet-pronunciation",
+        "french-basics/greetings-introductions",
+        "french-basics/numbers-telling-time",
+        "french-basics/days-weeks-months-seasons",
+        "french-basics/weather-expressions",
+        "french-basics/francophone-world"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Talking About Ourselves",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "talking-about-ourselves/core-learning-goals",
+        "talking-about-ourselves/introducing-yourself",
+        "talking-about-ourselves/asking-answering-questions",
+        "talking-about-ourselves/age-nationality-profession",
+        "talking-about-ourselves/appearance-personality",
+        "talking-about-ourselves/likes-dislikes-preferences",
+        "talking-about-ourselves/names-titles-terms-endearment"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Daily Life",
       "pages": [
-        "api-reference/introduction"
+        "daily-life/core-learning-goals",
+        "daily-life/routines-activities",
+        "daily-life/telling-time-schedules",
+        "daily-life/obligations-responsibilities",
+        "daily-life/hobbies-interests-leisure",
+        "daily-life/household-items-chores",
+        "daily-life/typical-french-life-schedules"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Going Out in the City",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "going-out-city/core-learning-goals",
+        "going-out-city/places-giving-directions",
+        "going-out-city/public-transportation-tickets",
+        "going-out-city/making-plans-meetings",
+        "going-out-city/asking-information-assistance",
+        "going-out-city/shopping-services-vocabulary",
+        "going-out-city/french-cities-transportation-social-life"
       ]
+    },
+    {
+      "group": "French Cuisine and Dining",
+      "pages": [
+        "french-cuisine-dining/core-learning-goals",
+        "french-cuisine-dining/food-drink-vocabulary",
+        "french-cuisine-dining/ordering-restaurant-cafe",
+        "french-cuisine-dining/food-preferences-restrictions",
+        "french-cuisine-dining/shopping-groceries-cooking",
+        "french-cuisine-dining/describing-meals-experiences",
+        "french-cuisine-dining/etiquette-slang"
+      ]
+    },
+    {
+      "group": "Family and Friends",
+      "pages": [
+        "family-friends/core-learning-goals",
+        "family-friends/family-members-relationships",
+        "family-friends/emotions-feelings",
+        "family-friends/opinions-advice",
+        "family-friends/celebrations-special-occasions",
+        "family-friends/informal-language-slang",
+        "family-friends/french-family-friendship-dynamics"
+      ]
+    },
+    {
+      "group": "Leisure and Entertainment",
+      "pages": [
+        "leisure-entertainment/core-learning-goals",
+        "leisure-entertainment/hobbies-interests",
+        "leisure-entertainment/sports-music-arts",
+        "leisure-entertainment/movies-tv-books",
+        "leisure-entertainment/opinions-preferences",
+        "leisure-entertainment/informal-language-slang",
+        "leisure-entertainment/popular-french-activities-pastimes"
+      ]
+    },
+    {
+      "group": "Travel and Discovery",
+      "pages": [
+        "travel-discovery/core-learning-goals",
+        "travel-discovery/travel-plans-preferences",
+        "travel-discovery/transportation-accommodation",
+        "travel-discovery/tourist-attractions-landmarks",
+        "travel-discovery/asking-giving-recommendations",
+        "travel-discovery/unexpected-situations",
+        "travel-discovery/popular-french-destinations-customs"
+      ]
+    },
+    {
+      "group": "Fashion and Style",
+      "pages": [
+        "fashion-style/core-learning-goals",
+        "fashion-style/clothing-accessories-fabrics",
+        "fashion-style/describing-outfits-personal-style",
+        "fashion-style/shopping-expressing-opinions",
+        "fashion-style/trends-brands",
+        "fashion-style/informal-language-slang",
+        "fashion-style/french-fashion-industry-icons"
+      ]
+    },
+    {
+      "group": "Health and Well-being",
+      "pages": [
+        "health-well-being/core-learning-goals",
+        "health-well-being/body-parts-illness-injuries",
+        "health-well-being/expressing-pain-discomfort-symptoms",
+        "health-well-being/advice-recommendations",
+        "health-well-being/healthy-lifestyle-choices",
+        "health-well-being/informal-language-slang",
+        "health-well-being/french-healthcare-system-attitudes"
+      ]
+    },
+    {
+      "group": "Studies and Career",
+      "pages": [
+        "studies-career/core-learning-goals",
+        "studies-career/school-subjects-education-levels",
+        "studies-career/academic-interests-achievements",
+        "studies-career/career-goals-job-preferences",
+        "studies-career/interview-professional-interactions",
+        "studies-career/informal-language-slang",
+        "studies-career/french-education-system-work-culture"
+      ]
+    },
+    {
+      "group": "Technology and Media",
+      "pages": [
+        "technology-media/core-learning-goals",
+        "technology-media/devices-apps-social-media",
+        "technology-media/usage-preferences",
+        "technology-media/news-current-events-consumption",
+        "technology-media/opinions",
+        "technology-media/informal-language-slang",
+        "technology-media/french-tech-industry-landscape"
+      ]
+    },
+    {
+      "group": "Practice Speaking",
+      "pages": ["practice/introduction"]
     }
   ],
+  "feedback": {
+    "thumbsRating": true,
+    "raiseIssue": true
+  },
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "instagram": "https://github.com/mintlify",
+    "tiktok": "https://www.tiktok.com/@mintlify",
+    "linkedin": "https://www.tiktok.com/@mintlify",
+    "discord": "https://www.tiktok.com/@mintlify"
   }
 }
