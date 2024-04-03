@@ -7,21 +7,29 @@ with open('mint.json') as file:
 
 # Iterate over the navigation groups
 for group in data['navigation']:
-    # Convert the group name to a URL-friendly format
-    group_dir = group['group'].lower().replace(' ', '-')
-    
-    # Create a directory for each group
-    os.makedirs(group_dir, exist_ok=True)
+    # Skip the "Practice Speaking" group
+    if group['group'] == "Practice Speaking":
+        continue
     
     # Iterate over the pages in each group
     for page in group['pages']:
-        # Create a markdown file for each page (section)
-        filename = f"{page}.mdx"
-        with open(filename, 'w') as file:
-            # Extract the page title from the path
-            page_title = page.split('/')[-1].replace('-', ' ').title()
-            file.write(f"# {page_title}\n\nAdd your content here.")
+        # Extract the directory and filename from the page path
+        page_dir, page_file = os.path.split(page)
         
-        print(f"Created: {filename}")
+        # Create the directory for the page if it doesn't already exist and page_dir is not empty
+        if page_dir:
+            os.makedirs(page_dir, exist_ok=True)
+        
+        # Create a markdown file for each page (section) if it doesn't already exist
+        filename = f"{page}.mdx"
+        if not os.path.exists(filename):
+            with open(filename, 'w') as file:
+                # Extract the page title from the path
+                page_title = page_file.replace('-', ' ').title()
+                file.write(f"# {page_title}\n\nAdd your content here.")
+            
+            print(f"Created: {filename}")
+        else:
+            print(f"Skipped: {filename} (already exists)")
 
-print("All markdown files have been created.")
+print("Markdown file creation completed.")
