@@ -45,8 +45,8 @@
   ],
   "navigation": [
     {
-      "group": "Introduction",
-      "pages": ["introduction"]
+      "group": "french",
+      "pages": ["french"]
     },
     {
       "group": "French Basics",
